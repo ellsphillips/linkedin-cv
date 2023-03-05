@@ -9,5 +9,5 @@ Content = dict[str, Any]
 
 def read_config(path: str) -> CV:
     with open(path, encoding="utf-8") as f:
-        content: Any = toml.load(f)
+        content: Content = toml.load(f)
         return CV(**content)
