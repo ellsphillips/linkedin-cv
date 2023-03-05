@@ -25,7 +25,7 @@ types-toml = "^0.10.8.5"
 linkedin-cv = "linkedincv.cli.core:main"
 
 [tool.setuptools.package-data]
-linkedincv = ["linkedincv/template/*"]
+linkedincv = ["py.typed", "linkedincv/template/*"]
 
 [tool.pytest.ini_options]
 addopts = "--cov=linkedincv"
@@ -44,9 +44,6 @@ warn_return_any = true
 warn_unreachable = true
 warn_unused_configs = true
 no_implicit_reexport = true
-
-[tool.setuptools.package-data]
-linkedincv = "py.typed"
 
 [tool.isort]
 multi_line_output = 3
