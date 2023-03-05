@@ -24,6 +24,9 @@ types-toml = "^0.10.8.5"
 [tool.poetry.plugins."console_scripts"]
 linkedin-cv = "linkedincv.cli.core:main"
 
+[tool.setuptools.package-data]
+linkedincv = ["linkedincv/template/*"]
+
 [tool.pytest.ini_options]
 addopts = "--cov=linkedincv"
 testpaths = ["tests"]
